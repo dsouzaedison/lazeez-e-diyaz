@@ -1,1 +1,1 @@
-# lazeez-e-diyaz
+# lazeez-e-niyaz
