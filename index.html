@@ -1,17 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="lazeez-e-diyaaz">
 <head>
     <meta charset="UTF-8">
-    <title>Lazeez-E-Diyaaz</title>
+    <title>Lazeez-E-Niyaaz</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="app.css"/>
+    <script src="app.js"></script>
 </head>
-<body>
+<body ng-controller="mainCtrl">
+
+<div class="contact-bar-top vertical-align">
+    <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <span class="contact-bar-content">
+                <i class="fa fa-phone-square"></i> 987-654-3210
+            </span>
+            <span class="contact-bar-content">
+                 <i class="fa fa-envelope"></i> sajid@lazeez-e-niyaaz.com
+            </span>
+            <span class="contact-bar-content">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google-plus"></i>
+            </span>
+        </div>
+        <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+        </div>
+    </div>
+</div>
 
 
+<div class="navigation-wrapper vertical-align">
+    <div class="container">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 vertical-align">
+            <h1>Logo</h1>
+        </div>
+        <div class="col-lg-8 col-md-8 hidden-sm hidden-xs right">
+            <span class="nav-links" ng-repeat="link in navlinks">
+                <a class="font-grey" href="{{link.link}}">{{link.name}}</a>
+            </span>
+        </div>
+        <div class="hidden-lg hidden-md col-sm-6 col-xs-6 bars">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</div>
+
+
+<div class="banner-wrapper">
+    <div class="banner-contents">
+        <div class="banner-title h1 center">
+            Wedding Catering
+        </div>
+        <div class="banner-content center h6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-push-3 col-md-push-3">
+            Talk of the Town is proud to offer our catering and event services at many of the best special event venues
+            in
+            Atlanta. If you are seeking a location that’s remote and romantic, an event space that’s urban and
+            art-inspired,
+            or anything in between, we can help you find the perfect space for your special occasion.
+        </div>
+    </div>
+</div>
+
+
+<div class="container border-bottom">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="data-contents-wrapper">
+            <div class="h2">Atlanta Catering & Special Events</div>
+            <span class="h6">Talk of the Town is widely respected as one of the top caterers in Atlanta, Georgia. We provide excellence in cuisine, service and event experience that our clients deserve. Our history of handling all types of event catering in Atlanta and the surrounding metro area means that you can rely upon us for any need. Not only are we called upon for some of the most coveted corporate events in town, but we are regarded as one of the top wedding caterers in Atlanta, as well.</span>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="data-contents-wrapper">
+            <div class="h2">Atlanta Catering & Special Events</div>
+            <span class="h6">Talk of the Town is widely respected as one of the top caterers in Atlanta, Georgia. We provide excellence in cuisine, service and event experience that our clients deserve. Our history of handling all types of event catering in Atlanta and the surrounding metro area means that you can rely upon us for any need. Not only are we called upon for some of the most coveted corporate events in town, but we are regarded as one of the top wedding caterers in Atlanta, as well.</span>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="data-contents-wrapper">
+            <div class="h2">Atlanta Catering & Special Events</div>
+            <span class="h6">Talk of the Town is widely respected as one of the top caterers in Atlanta, Georgia. We provide excellence in cuisine, service and event experience that our clients deserve. Our history of handling all types of event catering in Atlanta and the surrounding metro area means that you can rely upon us for any need. Not only are we called upon for some of the most coveted corporate events in town, but we are regarded as one of the top wedding caterers in Atlanta, as well.</span>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 copyright">
+            <span class="h6">Copyright &copy; 2016 Talk of the Town Catering & Special Events. All rights reserved.</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right">
+            <span class="contact-bar-content copyright">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google-plus"></i>
+            </span>
+        </div>
+    </div>
+</div>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
 </body>
 </html>

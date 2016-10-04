@@ -1,0 +1,104 @@
+::selection {
+    background-color: #FF6100;
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: #FF6100;
+    color: #fff;
+}
+
+body {
+    font-size: 14px;
+}
+.contact-bar-top {
+    height: 40px;
+    background: #f4f4f4;
+    line-height: 40px;
+    color: #555;
+}
+
+.vertical-align {
+    vertical-align: middle;
+}
+
+.contact-bar-content {
+    padding: 0px 5px;
+}
+
+.navigation-wrapper {
+    height: 70px;
+    border-bottom: 1px solid #eee;
+    line-height: 70px;
+}
+
+.nav-links {
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+.font-grey {
+    color: #939393;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.banner-wrapper {
+    height: 400px;
+    width: 100%;
+    padding-top: 50px;
+    background: url("images/banner1.jpg") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("images/banner1.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/banner1.jpg");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/banner1.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/banner1.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("images/banner1.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/banner1.jpg");
+
+}
+
+.banner-contents {
+    min-height: 300px;
+}
+
+.banner-content {
+}
+
+.bars {
+    text-align: right;
+}
+
+.data-contents-wrapper {
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #eee;
+}
+
+.footer {
+    min-height: 50px;
+    width: 100%;
+    background: #270000;
+    color: #fff;
+}
+
+.copyright {
+    line-height: 50px;
+    vertical-align: middle;
+}
