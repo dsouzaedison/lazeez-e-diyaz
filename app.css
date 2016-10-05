@@ -61,21 +61,10 @@ a:hover {
     background: url("images/banner1.jpg") no-repeat;
     background-size: 100% 100%;
     color: #fff;
-
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("images/banner1.jpg");
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/banner1.jpg");
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/banner1.jpg");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/banner1.jpg");
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("images/banner1.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/banner1.jpg");
-
 }
 
 .banner-contents {
     min-height: 300px;
-}
-
-.banner-content {
 }
 
 .bars {
@@ -101,4 +90,32 @@ a:hover {
 .copyright {
     line-height: 50px;
     vertical-align: middle;
+}
+
+.about-banner-wrapper {
+    height: 300px;
+    width: 100%;
+    padding-top: 80px;
+    background: url("images/about-banner.jpg") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.padding {
+    padding: 15px;
+}
+
+.about-content-image {
+    width: 100%;
+    height: 300px;
+}
+
+.bg-grey {
+    background: #eee;
+}
+
+.line-seperator {
+    width: 100%;
+    height: 30px;
+    margin: 0px 10px;
 }
