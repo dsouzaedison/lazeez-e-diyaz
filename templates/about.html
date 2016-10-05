@@ -1,53 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="lazeez-e-diyaaz">
-<head>
-    <meta charset="UTF-8">
-    <title>Lazeez-E-Niyaaz</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="app.css"/>
-    <script src="app.js"></script>
-</head>
-<body ng-controller="mainCtrl">
-
-<div class="contact-bar-top vertical-align">
-    <div class="container">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <span class="contact-bar-content">
-                <i class="fa fa-phone-square"></i> 987-654-3210
-            </span>
-            <span class="contact-bar-content">
-                 <i class="fa fa-envelope"></i> sajid@lazeez-e-niyaaz.com
-            </span>
-            <span class="contact-bar-content">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-google-plus"></i>
-            </span>
-        </div>
-        <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
-        </div>
-    </div>
-</div>
-
-<div class="navigation-wrapper vertical-align">
-    <div class="container">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 vertical-align">
-            <h1>Logo</h1>
-        </div>
-        <div class="col-lg-8 col-md-8 hidden-sm hidden-xs right">
-            <span class="nav-links" ng-repeat="link in navlinks">
-                <a class="font-grey" href="{{link.link}}">{{link.name}}</a>
-            </span>
-        </div>
-        <div class="hidden-lg hidden-md col-sm-6 col-xs-6 bars">
-            <i class="fa fa-bars"></i>
-        </div>
-    </div>
-</div>
-
 <div class="about-banner-wrapper">
     <div class="banner-contents">
         <div class="banner-title h1 center">
@@ -109,23 +59,3 @@
     </div>
 </div>
 
-
-
-<div class="footer">
-    <div class="container">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 copyright">
-            <span class="h6">Copyright &copy;
-                2016 Talk of the Town Catering & Special Events. All rights reserved.</span>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right">
-            <span class="contact-bar-content copyright">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-google-plus"></i>
-            </span>
-        </div>
-    </div>
-</div>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
-</body>
-</html>
