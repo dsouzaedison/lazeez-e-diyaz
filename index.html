@@ -35,7 +35,9 @@
 <div class="navigation-wrapper vertical-align">
     <div class="container">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 vertical-align">
-            <h1>Logo</h1>
+            <div class="logo-wrapper">
+                <img src="images/logo.png" alt="Logo" class="logo"/>
+            </div>
         </div>
         <div class="col-lg-8 col-md-8 hidden-sm hidden-xs right">
             <span class="nav-links" ng-repeat="link in navlinks">
@@ -48,25 +50,24 @@
     </div>
 </div>
 
-<div class="about-banner-wrapper">
+<div class="services-banner-wrapper">
     <div class="banner-contents">
         <div class="banner-title h1 center">
-            About Us
+            Our Services
         </div>
         <div class="banner-content center h6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-push-3 col-md-push-3">
             Our food reflects our commitment to exceptional quality. All meals are prepared under the guidance of one of
-            the most experienced chefs. Our menu items are prepared with a passion for perfection, and your guests will
-            be raving about the wonderful food for days to come. New dishes are being added regularly to our menu which
-            has been developed over the past few years. We serve traditional, elegant fare, with a contemporary flair!
+            the most experienced chefs.
         </div>
     </div>
 </div>
 
-<div class="container padding">
+
+<div class="container padding border-bottom">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="h2 center">
-                A little info about us
+                What is Corporate Event?
             </div>
             <img src="images/line-seperator.png" class="line-seperator" alt=""/>
 
@@ -81,35 +82,80 @@
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <img src="images/about-content1.jpg" alt="Image" class="about-content-image image-reponsive"/>
+            <img src="images/banner3.jpg" alt="Image" class="about-content-image image-reponsive"/>
         </div>
     </div>
 </div>
 
 
-<div class="col-lg-12 bg-grey">
-    <div class="container">
-        <div class="row padding">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding">
-                <img src="images/our-story.jpg" alt="Image" class="about-content-image image-reponsive"/>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="h2 center">
-                    Our Story
-                </div>
-                <img src="images/line-seperator.png" class="line-seperator" alt=""/>
+<div class="container service-cards-container" ng-click="showPopup=true">
+    <div class="row">
+        <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
+            <div class="card hoverable">
+                <img src="images/pizza.jpg" class="service-card-image" alt=""/>
 
-                <div class="info1-text padding">
-                    Team Lazeez-E-Niyaz is comprised of young and passionate people who are excelled in food catering
-                    industry. Founded by Sajid Abdul in joint venture with Rama Krishna Reddy who has 10 years vast
-                    experience and received many appreciations and recognitions for exemplary work.
+                <div class="h2">Crystal</div>
+                <div class="card-content">
+                    We take care of all the details, from preparation to clean up. Our prices are disclosed up front in
+                    your
+                    event contract, and we do not impose hidden charges. Our team of experienced chefs will make any
+                    event a
+                    pleasure. For all corporate offices Daily basis (Breakfast\Lunch\Dinner), corporate events,
+                    Weddings, or
+                    any in Home special events Lazeez- E- Niyaz Catering is your best choice.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
+            <div class="card hoverable">
+                <img src="images/pizza.jpg" class="service-card-image" alt=""/>
+
+                <div class="h2">Silver</div>
+                <div class="card-content">
+                    We take care of all the details, from preparation to clean up. Our prices are disclosed up front in
+                    your
+                    event contract, and we do not impose hidden charges. Our team of experienced chefs will make any
+                    event a
+                    pleasure. For all corporate offices Daily basis (Breakfast\Lunch\Dinner), corporate events,
+                    Weddings, or
+                    any in Home special events Lazeez- E- Niyaz Catering is your best choice.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
+            <div class="card hoverable">
+                <img src="images/pizza.jpg" class="service-card-image" alt=""/>
+
+                <div class="h2">Gold</div>
+                <div class="card-content">
+                    We take care of all the details, from preparation to clean up. Our prices are disclosed up front in
+                    your
+                    event contract, and we do not impose hidden charges. Our team of experienced chefs will make any
+                    event a
+                    pleasure. For all corporate offices Daily basis (Breakfast\Lunch\Dinner), corporate events,
+                    Weddings, or
+                    any in Home special events Lazeez- E- Niyaz Catering is your best choice.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
+            <div class="card hoverable">
+                <img src="images/pizza.jpg" class="service-card-image" alt=""/>
+
+                <div class="h2">Crystal</div>
+                <div class="card-content">
+                    We take care of all the details, from preparation to clean up. Our prices are disclosed up front in
+                    your
+                    event contract, and we do not impose hidden charges. Our team of experienced chefs will make any
+                    event a
+                    pleasure. For all corporate offices Daily basis (Breakfast\Lunch\Dinner), corporate events,
+                    Weddings, or
+                    any in Home special events Lazeez- E- Niyaz Catering is your best choice.
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
 
 <div class="footer">
     <div class="container">
@@ -123,6 +169,29 @@
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-google-plus"></i>
             </span>
+        </div>
+    </div>
+</div>
+
+<div class="popup" ng-show="showPopup" ng-init="showPopup=false">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-push-4 col-md-push-4">
+                <div class="menu">
+                    <span class="btn-close" ng-click="showPopup=false">&times;</span>
+
+                    <div class="h1 center">Crystal Event</div>
+                    <img src="images/line-seperator.png" class="line-seperator" alt=""/>
+
+                    <div class="menu-item">Chicken Tandori..............</div>
+                    <div class="menu-item">Chicken Tandori..............</div>
+                    <div class="menu-item">Chicken Tandori..............</div>
+                    <div class="menu-item">Chicken Tandori..............</div>
+                    <div class="menu-item">Chicken Tandori..............</div>
+                    <div class="menu-item">Chicken Tandori..............</div>
+                    <div class="menu-item">Chicken Tandori..............</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
