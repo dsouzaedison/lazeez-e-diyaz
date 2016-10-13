@@ -168,8 +168,8 @@ a:hover {
 }
 
 .hoverable:hover {
-    box-shadow: 0px 0px 0.3em #555;
-    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 0.6em #555;
+    transition: all 0.3s ease-in-out;
 }
 
 .popup {
@@ -359,4 +359,65 @@ a:hover {
 
 .menu-item {
     color: #1a9d46;
+}
+
+.bg-olive {
+    background: darkolivegreen;
+}
+
+.bg-oliveyellow {
+    background: #b79833;
+}
+
+.bg-orange {
+    background: orange;
+}
+
+.bg-orangered {
+    background: orangered;
+}
+
+.bg-purple {
+    background: #334cb7;
+}
+
+.bg-red {
+    background: #b73633;
+}
+
+.bg-green {
+    background: #92be1a;
+}
+
+.bg-mediumvioletred {
+    background: mediumvioletred;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+.height360 {
+    min-height: 360px;
+}
+
+.height802 {
+    min-height: 802px;
+}
+
+.height722 {
+    min-height: 722px;
+}
+
+.font-white {
+    color: #fff;
+}
+
+.font-black {
+    color: #333;
+}
+
+.service-header-bg {
+    padding: 10px;
+    background: rgba(255,255,255,0.7);
 }

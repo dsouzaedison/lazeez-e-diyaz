@@ -6,8 +6,9 @@ var app = angular.module('lazeez-e-diyaaz', ['route']);
 app.controller('mainCtrl', function ($scope, $http) {
     $scope.items = [];
     $scope.modalHeader = 'Loading..';
+    $scope.servicemenu = [];
 
-    var services = [{name: 'corporateCateringCrystal', menu : ''},
+    $scope.services = [{name: 'corporateCateringCrystal', menu : ''},
         {name: 'corporateCateringSilver', menu : ''},
         {name: 'corporateCateringGold', menu : ''},
         {name: 'corporateEventsCrystal', menu : ''},
@@ -23,9 +24,6 @@ app.controller('mainCtrl', function ($scope, $http) {
         {name: 'specialEventsGold', menu : ''},
         {name: 'specialEventsDiamond', menu : ''}];
 
-    $scope.menu = [];
-    //console.log($scope.services);
-
     $scope.showMenuModal = function (name, header) {
         $scope.modalHeader = header;
         $http.get('data/' + name + '.json')
@@ -34,32 +32,15 @@ app.controller('mainCtrl', function ($scope, $http) {
             });
     };
 
-    //var i = 0;
-    //$scope.services.forEach(function(service){
-    //    $http.get('data/' + service.name + '.json')
-    //        .then(function(data){
-    //            console.log(i);
-    //            console.log($scope.services[Number(i)]);
-    //            $scope.services[i].menu = data.data;
-    //            //console.log(data.data);
-    //        });
-    //    i++;
-    //});
-    //
-    $scope.servicedata = [];
-    for (var i = 0; i < services.length; i++) {
-        $.get('data/' + services[i].name + '.json', function (data) {
-            //console.log(i);
-            //console.log($scope.services[Number(i)]);
-            var temp = {name : services[i].name, menu : data};
-            $scope.servicedata[i] = temp;
-            //console.log(data.data);
+    for (var i = 0; i < 15; i++) {
+        $.get('data/' + $scope.services[i].name + '.json', function (data) {
+            $scope.servicemenu.push(data);
         });
     }
 
-    setTimeout(function(){
-        console.log($scope.servicedata);
-    }, 4000);
+    //setTimeout(function(){
+    //    console.log($scope.servicemenu);
+    //}, 4000);
 
 
 });

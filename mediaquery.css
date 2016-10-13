@@ -1,0 +1,10 @@
+@media only screen and (max-width: 1238px) {
+    /* For mobile phones: */
+    .height802 {
+        min-height: 100px;
+    }
+
+    .height722 {
+        min-height: 100px;
+    }
+}
