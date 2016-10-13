@@ -1,31 +1,57 @@
 <div class="container">
     <div class="col-lg-12">
-
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 padding" ng-repeat="content in [1,1,1,1,1,1,1,1,1] track by $index">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 padding" ng-repeat="menu in menulist">
             <div class="menu-card">
-                <div class="h2 no-margin font-grey border-bottom-red">Starters</div>
+                <div class="h4 no-margin font-grey border-bottom-red">{{menu.root}}</div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 padding">
-                        <div class="h4 no-margin menu-subheader border-bottom">Rolls</div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 padding" ng-repeat="header in menu.headers">
+                        <div class="h4 no-margin menu-subheader border-bottom">{{header.name}}</div>
                         <ul class="ul-no-style">
-                            <li>Item 1</li>
-                            <li>Item 1</li>
-                            <li>Item 1</li>
-                            <li>Item 1</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 padding">
-                        <div class="h4 no-margin menu-subheader border-bottom">Rolls</div>
-                        <ul class="ul-no-style">
-                            <li>Item 1</li>
-                            <li>Item 1</li>
-                            <li>Item 1</li>
-                            <li>Item 1</li>
+                            <li ng-repeat="item in header.items" class="disc">{{item}}</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 padding" ng-repeat="menu in LHMenu track by $index">
+            <div class="menu-card">
+                <div class="h4 no-margin font-grey border-bottom-red">{{menu.name}}</div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 padding">
+                        <!--<div class="h4 no-margin menu-subheader border-bottom"></div>-->
+                        <ul class="ul-no-style">
+                            <li ng-repeat="item in menu.items track by $index" ng-hide="($index > 22)" class="disc">{{item}}</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 padding">
+                        <!--<div class="h4 no-margin menu-subheader border-bottom"></div>-->
+                        <ul class="ul-no-style">
+                            <li ng-repeat="item in menu.items track by $index" ng-show="($index > 22)" class="disc">{{item}}</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<!--<div class="container">-->
+    <!--<div class="col-lg-12">-->
+        <!--<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 padding" ng-repeat="menu in LHMenu track by $index">-->
+            <!--<div class="menu-card">-->
+                <!--<div class="h4 no-margin font-grey border-bottom-red">{{menu.name}}</div>-->
+                <!--<div class="row">-->
+                    <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 padding">-->
+                        <!--<div class="h4 no-margin menu-subheader border-bottom">MENU</div>-->
+                        <!--<ul class="ul-no-style">-->
+                            <!--<li ng-repeat="item in menu.items track by $index">{{item}}</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->

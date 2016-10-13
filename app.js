@@ -7,6 +7,8 @@ app.controller('mainCtrl', function ($scope, $http) {
     $scope.items = [];
     $scope.modalHeader = 'Loading..';
     $scope.servicemenu = [];
+    $scope.menulist = [];
+    $scope.LHMenu= [];
 
     $scope.services = [{name: 'corporateCateringCrystal', menu : ''},
         {name: 'corporateCateringSilver', menu : ''},
@@ -38,9 +40,16 @@ app.controller('mainCtrl', function ($scope, $http) {
         });
     }
 
-    //setTimeout(function(){
-    //    console.log($scope.servicemenu);
-    //}, 4000);
+    $.get('data/menu.json', function (data) {
+        $scope.menulist= data;
+    });
 
+    $.get('data/lowerHierarchyMenu.json', function (data) {
+        $scope.LHMenu= data;
+    });
+
+    setTimeout(function(){
+        console.log($scope.LHMenu);
+    }, 4000);
 
 });
