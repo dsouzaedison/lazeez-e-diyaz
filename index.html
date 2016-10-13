@@ -2,6 +2,9 @@
 <html lang="en" ng-app="lazeez-e-diyaaz">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="best catering, catering service, catering bangalore, top catering, food bangalore, bengaluru, lazeez, e, niyaz, lazeez-e-niyaz">
+    <meta name="description" content="">
     <title>Lazeez-E-Niyaaz</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <script src="bower_components/angular/angular.min.js"></script>
@@ -12,6 +15,7 @@
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
     <script src="routes.js"></script>
     <script src="app.js"></script>
+    <script src="appJQ.js"></script>
 </head>
 <body ng-controller="mainCtrl">
 
@@ -57,7 +61,7 @@
                     <div><a href="#/corporateEvents" class="dropdown-links">Corporate Events</a></div>
                     <div><a href="#/weddingEvents" class="dropdown-links">Wedding Events</a></div>
                     <div><a href="#/specialEvents" class="dropdown-links">Special Events</a></div>
-                    <div><a href="#/custom" class="dropdown-links">Custom Events</a></div>
+                    <div><a href="#/allServices" class="dropdown-links">All Services</a></div>
                 </div>
             </span>
             <span class="nav-links">
@@ -78,10 +82,13 @@
         </div>
     </div>
 </div>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
 <ng-view></ng-view>
 
-<div class="footer">
+<div class="footer" ng-hide="false">
     <div class="container">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 copyright">
             <span class="h6">Copyright &copy;
@@ -106,19 +113,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Crystal</h4>
+                <div class="modal-title">{{modalHeader}}</div>
             </div>
             <div class="modal-body">
-                <div class="menu-item">Chicken Tandori..............</div>
-                <div class="menu-item">Chicken Tandori..............</div>
-                <div class="menu-item">Chicken Tandori..............</div>
-                <div class="menu-item">Chicken Tandori..............</div>
-                <div class="menu-item">Chicken Tandori..............</div>
-                <div class="menu-item">Chicken Tandori..............</div>
-                <div class="menu-item">Chicken Tandori..............</div>
+                <div class="menu-item" ng-repeat="item in items"><i class="fa fa-bullseye"></i> {{item}}</div>
             </div>
             <div class="modal-footer font-grey">
-                <div class="h6">Note : Create your own package at custom events.</div>
+                <div class="h6"><i class="fa fa-info-circle"></i> Note : Create your own package at custom events.</div>
             </div>
         </div>
 

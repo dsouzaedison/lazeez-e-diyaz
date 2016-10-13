@@ -1,5 +1,5 @@
 /**
- * Created by dsouz on 08-10-2016.
+ * Created by Edison D'souza on 08-10-2016.
  */
 var route = angular.module('route', ['ngRoute']);
 
@@ -29,11 +29,11 @@ route.config(function ($routeProvider) {
         .when("/specialEvents", {
             templateUrl: "templates/specialEvents.html"
         })
-        .when("/Portfolio", {
-            templateUrl: "templates/gallery.html"
+        .when("/allServices", {
+            templateUrl: "templates/allServices.html"
         })
-        .when("/Contact Us", {
-            templateUrl: "templates/contactus.html"
+        .when("/menu", {
+            templateUrl: "templates/menu.html"
         })
         .when("/About", {
             templateUrl: "templates/about.html"
