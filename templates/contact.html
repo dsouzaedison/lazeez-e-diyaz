@@ -1,0 +1,76 @@
+<div class="bg-grey">
+    <div class="container height70vh">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-push-3 padding">
+                <div class="card padding bg-white">
+                    <form action="" name="contactForm" formnovalidate>
+                        <div class="lineHeight100">
+                            <div class="h2">Contact Us</div>
+                            <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-user input-group-addon"></i></span>
+                                <input type="text" ng-model="name" id="name" name="name" class="floating-input"
+                                       placeholder="Name"
+                                       ng-class="!contactForm.name.$valid && (contactForm.name.$dirty)?'input-error':(contactForm.name.$dirty? 'input-success' : '')"
+                                       ng-pattern="/^[a-zA-Z ]{3}[a-zA-Z ]*$/" ng-required="true"/>
+                            </div>
+                            <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-home input-group-addon"></i></span>
+                                <input type="text" ng-model="city" id="city" name="city" class="floating-input"
+                                       placeholder="City" ng-pattern="/^[a-zA-Z ]{3}[a-zA-Z ]*$/"
+                                       ng-class="!contactForm.city.$valid && (contactForm.city.$dirty)?'input-error':(contactForm.city.$dirty? 'input-success' : '')"
+                                       ng-required="true"/>
+                            </div>
+                            <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-phone-square input-group-addon"></i></span>
+                                <input type="text" ng-model="phone" id="phone" name="phone" class="floating-input"
+                                       placeholder="Phone Number" ng-pattern="/^[0-9]{10}$/"
+                                       ng-class="!contactForm.phone.$valid && (contactForm.phone.$dirty)?'input-error':(contactForm.phone.$dirty? 'input-success' : '')"
+                                       ng-required="true"/>
+                            </div>
+                            <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-envelope input-group-addon"></i></span>
+                                <input type="text" type="text" ng-model="email" id="email" name="email"
+                                       class="floating-input no-transform"
+                                       placeholder="Email Id" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/"
+                                       ng-class="!contactForm.email.$valid && (contactForm.email.$dirty)?'input-error':(contactForm.email.$dirty? 'input-success' : '')"
+                                       ng-required="true"/>
+                            </div>
+                            <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-question input-group-addon"></i></span>
+                                <input type="text" ng-model="referral" id="referral" name="referral"
+                                       class="floating-input"
+                                       placeholder="Where did you hear about lazeez-e-niyaz?"
+                                       ng-class="!contactForm.referral.$valid && (contactForm.referral.$dirty)?'input-error':(contactForm.referral.$dirty? 'input-success' : '')"
+                                       ng-pattern="/^[a-zA-Z ]{3}[a-zA-Z ]*$/"/>
+                            </div>
+                            <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-pencil input-group-addon"></i></span>
+                                <input type="text" ng-model="subject" id="subject" name="subject" class="floating-input"
+                                       placeholder="Subject"
+                                       ng-class="!contactForm.subject.$valid && (contactForm.subject.$dirty)?'input-error':(contactForm.subject.$dirty? 'input-success' : '')"
+                                       ng-pattern="/^[a-zA-Z0-9 ]{2}[a-zA-Z0-9 ]*$/"
+                                       ng-required="true"/>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-pencil-square-o input-group-addon"></i></span>
+                         <textarea ng-model="message" id="message" name="message" class="floating-input"
+                                   placeholder="Type your Message"
+                                   ng-class="!contactForm.message.$valid && (contactForm.message.$dirty)?'input-error':(contactForm.message.$dirty? 'input-success' : '')"
+                                   rows="10" ng-minlength="3" ng-required="true"></textarea>
+                        </div>
+
+                        <button class="btn-submit-contact"><i class="fa fa-paper-plane"></i> Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

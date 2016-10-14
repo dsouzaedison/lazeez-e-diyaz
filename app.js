@@ -48,8 +48,8 @@ app.controller('mainCtrl', function ($scope, $http) {
         $scope.LHMenu= data;
     });
 
-    setTimeout(function(){
-        console.log($scope.LHMenu);
-    }, 4000);
+    //setTimeout(function(){
+    //    console.log($scope.LHMenu);
+    //}, 4000);
 
 });

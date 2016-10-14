@@ -35,8 +35,8 @@ route.config(function ($routeProvider) {
         .when("/menu", {
             templateUrl: "templates/menu.html"
         })
-        .when("/About", {
-            templateUrl: "templates/about.html"
+        .when("/contact", {
+            templateUrl: "templates/contact.html"
         })
-        .otherwise({redirectTo :'/home'});
+        .otherwise({redirectTo :'/'});
 });
