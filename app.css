@@ -8,6 +8,10 @@
     color: #fff;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
 body {
     font-size: 14px;
 }
@@ -480,6 +484,7 @@ textarea {
 }
 
 .btn-submit-contact:hover {
+    outline: none;
     color: #fff;
     background: #770207;
     border: none;

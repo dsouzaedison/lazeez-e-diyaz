@@ -35,6 +35,9 @@ route.config(function ($routeProvider) {
         .when("/menu", {
             templateUrl: "templates/menu.html"
         })
+        .when("/testimonials", {
+            templateUrl: "templates/testimonials.html"
+        })
         .when("/contact", {
             templateUrl: "templates/contact.html"
         })

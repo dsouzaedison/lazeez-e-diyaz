@@ -1,0 +1,68 @@
+<div class="bg-grey" ng-init="setTab(4)">
+    <div class="container height70vh">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-push-3 padding">
+                <div class="card padding bg-white">
+                    <form action="" name="testimonialForm" novalidate>
+                        <div class="lineHeight100">
+                            <div class="h2">Testimonials</div>
+                            <hr/>
+                            <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-user input-group-addon"></i></span>
+                                <input type="text" ng-model="name" id="name" name="name" class="floating-input"
+                                       placeholder="Name"
+                                       ng-class="!testimonialForm.name.$valid && (testimonialForm.name.$dirty)?'input-error':(testimonialForm.name.$dirty? 'input-success' : '')"
+                                       ng-pattern="/^[a-zA-Z ]{3}[a-zA-Z ]*$/" ng-required="true"/>
+                            </div>
+                            <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-building input-group-addon"></i></span>
+                                <input type="text" ng-model="company" id="company" name="company" class="floating-input"
+                                       placeholder="Company working at(optional)"
+                                       ng-pattern="/^[a-zA-Z ]{3}[a-zA-Z ]*$/"
+                                       ng-class="!testimonialForm.company.$valid && (testimonialForm.company.$dirty)?'input-error':(testimonialForm.company.$dirty? 'input-success' : '')"/>
+                            </div>
+                            <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-envelope input-group-addon"></i></span>
+                                <input type="text" type="text" ng-model="email" id="email" name="email"
+                                       class="floating-input no-transform"
+                                       placeholder="Email Id" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/"
+                                       ng-class="!testimonialForm.email.$valid && (testimonialForm.email.$dirty)?'input-error':(testimonialForm.email.$dirty? 'input-success' : '')"
+                                       ng-required="true"/>
+                            </div>
+                            <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-phone-square input-group-addon"></i></span>
+                                <input type="text" ng-model="phone" id="phone" name="phone" class="floating-input"
+                                       placeholder="Phone Number" ng-pattern="/^[0-9]{10}$/"
+                                       ng-class="!testimonialForm.phone.$valid && (testimonialForm.phone.$dirty)?'input-error':(testimonialForm.phone.$dirty? 'input-success' : '')"
+                                       ng-required="true"/>
+                            </div>
+                            <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-question input-group-addon"></i></span>
+                                <input type="text" ng-model="share" id="share" name="share"
+                                       class="floating-input"
+                                       placeholder="Shall we share your feedback on our website?"
+                                       ng-class="!testimonialForm.share.$valid && (testimonialForm.share.$dirty)?'input-error':(testimonialForm.share.$dirty? 'input-success' : '')"
+                                       ng-pattern="/^[a-zA-Z ]{3}[a-zA-Z ]*$/"/>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i
+                                    class="fa fa-pencil-square-o input-group-addon"></i></span>
+                         <textarea ng-model="message" id="message" name="message" class="floating-input"
+                                   placeholder="Testimonial"
+                                   ng-class="!testimonialForm.message.$valid && (testimonialForm.message.$dirty)?'input-error':(testimonialForm.message.$dirty? 'input-success' : '')"
+                                   rows="10" ng-minlength="3" ng-required="true"></textarea>
+                        </div>
+
+                        <button class="btn-submit-contact"><i class="fa fa-paper-plane"></i> Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
