@@ -4,6 +4,7 @@
 var app = angular.module('lazeez-e-diyaaz', ['route']);
 
 app.controller('mainCtrl', function ($scope, $http) {
+    $scope.currentTab = 0;
     $scope.items = [];
     $scope.modalHeader = 'Loading..';
     $scope.servicemenu = [];
@@ -25,6 +26,10 @@ app.controller('mainCtrl', function ($scope, $http) {
         {name: 'specialEventsSilver', menu : ''},
         {name: 'specialEventsGold', menu : ''},
         {name: 'specialEventsDiamond', menu : ''}];
+
+    $scope.setTab = function(x) {
+        $scope.currentTab = x;
+    };
 
     $scope.showMenuModal = function (name, header) {
         $scope.modalHeader = header;
