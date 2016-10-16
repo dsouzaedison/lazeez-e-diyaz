@@ -110,7 +110,7 @@ a:hover {
 }
 
 .about-banner-wrapper {
-    height: 300px;
+    height: 400px;
     width: 100%;
     padding-top: 80px;
     background: url("images/about-banner.jpg") no-repeat;
@@ -401,6 +401,10 @@ a:hover {
     background: mediumvioletred;
 }
 
+.bg-brown {
+    background: #770207;
+}
+
 .no-overflow {
     overflow: hidden;
 }
@@ -519,26 +523,31 @@ textarea {
 .corporate-catering-banner {
     background: url("images/corporateCateringBanner.jpg") no-repeat;
     background-size: 100% 100%;
+    height: 400px;
 }
 
 .corporate-event-banner {
     background: url("images/corporateEventBanner.jpg") no-repeat;
     background-size: 100% 100%;
+    height: 400px;
 }
 
 .wedding-event-banner {
     background: url("images/weddingEventBanner.jpg") no-repeat;
     background-size: 100% 100%;
+    height: 400px;
 }
 
 .special-event-banner {
     background: url("images/weddingEventBanner.jpg") no-repeat;
     background-size: 100% 100%;
+    height: 400px;
 }
 
 .testimonial-banner {
     background: url("images/testimonialBanner.jpg") no-repeat;
     background-size: 100% 100%;
+    height: 400px;
 }
 
 .type {
@@ -547,4 +556,12 @@ textarea {
 
 .margin-left {
     margin-left: 15px;
+}
+
+.menu-header {
+    padding: 5px 10px;
+    background: #770207;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0.3em #555;
 }

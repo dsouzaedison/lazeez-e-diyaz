@@ -11,9 +11,10 @@
               "Chicken Biryani",
               "Mutton Biryani",
               "Jinga (Prawn) Biryani",
-              "Kaju Biryani / Pulao,Egg Biryani",
+              "Kaju Biryani / Egg Biryani",
               "Mix Vegetables Biryani",
-              "Mutter (Green Peas) Biryani / Pulao"
+              "Mutter (Green Peas) Biryani",
+              "Fish Biryani"
             ]
           }
         ]
@@ -265,7 +266,7 @@
     ]
   },
   {
-    "type": "Kashmiri Cusine",
+    "type": "Kashmiri Cuisine",
     "headers": [
       {
         "name": "",
