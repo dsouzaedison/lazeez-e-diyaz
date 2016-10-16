@@ -154,7 +154,6 @@ a:hover {
     height: 300px;
     width: 100%;
     padding-top: 80px;
-    background: url("images/about-banner3.jpg") no-repeat;
     background-size: 100% 100%;
     color: #fff;
 }
@@ -511,4 +510,41 @@ textarea {
 
 .bg-white {
     background: #fff;
+}
+
+.testimonial-text {
+    font-size: 150%;
+}
+
+.corporate-catering-banner {
+    background: url("images/corporateCateringBanner.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.corporate-event-banner {
+    background: url("images/corporateEventBanner.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.wedding-event-banner {
+    background: url("images/weddingEventBanner.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.special-event-banner {
+    background: url("images/weddingEventBanner.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.testimonial-banner {
+    background: url("images/testimonialBanner.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.type {
+    border-bottom: 2px solid yellowgreen;
+}
+
+.margin-left {
+    margin-left: 15px;
 }

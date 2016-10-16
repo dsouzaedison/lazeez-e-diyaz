@@ -1,11 +1,32 @@
+<div class="services-banner-wrapper testimonial-banner" ng-init="setTab(2)">
+    <div class="banner-contents">
+        <div class="banner-title h1 center">
+            Testimonials
+        </div>
+        <div class="banner-content center h6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-push-3 col-md-push-3">
+
+        </div>
+    </div>
+</div>
+
 <div class="bg-grey" ng-init="setTab(4)">
     <div class="container height70vh">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-push-3 padding">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding">
+                <div class="card padding bg-white">
+                    <blockquote>
+                        <p class="text-center testimonial-text"><i class="fa fa-quote-left"></i> Lazeez-E-Niyaz is one
+                            of the best catering service in the town. I always prefer them. <i
+                                    class="fa fa-quote-right"></i></p>
+                        <footer>From Edison Dsouza<br>(Skiploop Labs PVT. LTD.)</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding">
                 <div class="card padding bg-white">
                     <form action="" name="testimonialForm" novalidate>
                         <div class="lineHeight100">
-                            <div class="h2">Testimonials</div>
+                            <div class="h2 text-capitalize">Share your Experience with Us</div>
                             <hr/>
                             <div class="input-group">
                             <span class="input-group-addon"><i
@@ -38,17 +59,17 @@
                                 <input type="text" ng-model="phone" id="phone" name="phone" class="floating-input"
                                        placeholder="Phone Number" ng-pattern="/^[0-9]{10}$/"
                                        ng-class="!testimonialForm.phone.$valid && (testimonialForm.phone.$dirty)?'input-error':(testimonialForm.phone.$dirty? 'input-success' : '')"
-                                       ng-required="true"/>
+                                        />
                             </div>
-                            <div class="input-group">
-                            <span class="input-group-addon"><i
-                                    class="fa fa-question input-group-addon"></i></span>
-                                <input type="text" ng-model="share" id="share" name="share"
-                                       class="floating-input"
-                                       placeholder="Shall we share your feedback on our website?"
-                                       ng-class="!testimonialForm.share.$valid && (testimonialForm.share.$dirty)?'input-error':(testimonialForm.share.$dirty? 'input-success' : '')"
-                                       ng-pattern="/^[a-zA-Z ]{3}[a-zA-Z ]*$/"/>
-                            </div>
+                            <!--<div class="input-group">-->
+                            <!--<span class="input-group-addon"><i-->
+                            <!--class="fa fa-question input-group-addon"></i></span>-->
+                            <!--<input type="text" ng-model="share" id="share" name="share"-->
+                            <!--class="floating-input"-->
+                            <!--placeholder="Shall we share your feedback on our website?"-->
+                            <!--ng-class="!testimonialForm.share.$valid && (testimonialForm.share.$dirty)?'input-error':(testimonialForm.share.$dirty? 'input-success' : '')"-->
+                            <!--ng-pattern="/^[a-zA-Z ]{3}[a-zA-Z ]*$/"/>-->
+                            <!--</div>-->
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon"><i

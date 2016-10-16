@@ -1,0 +1,346 @@
+[
+  {
+    "type": "Biryani & Staples",
+    "headers": [
+      {
+        "name": "Biryani",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "Chicken Biryani",
+              "Mutton Biryani",
+              "Jinga (Prawn) Biryani",
+              "Kaju Biryani / Pulao,Egg Biryani",
+              "Mix Vegetables Biryani",
+              "Mutter (Green Peas) Biryani / Pulao"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Staples",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "Bagara Khana / Ghee Rice",
+              "Jeera Rice",
+              "Khichdi-Khatta",
+              "White Rice",
+              "Pulihora",
+              "Bisi  bele bath",
+              "Chitranna",
+              "Puliyogare"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "North Cuisine",
+    "headers": [
+      {
+        "name": "Vegetarian",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "Aloo Amritsari",
+              "Bhindi Anardana",
+              "Karela Masaledar",
+              "Khoya Matar",
+              "Sarsoon Ka Saag",
+              "Sabz Sangar",
+              "Papad Ka Shaak",
+              "Rajasthani Bhindi",
+              "Aloo Bharta",
+              "Bhindi Bhaji",
+              "Ghiye Ke Kofte",
+              "Hara Chana Masala",
+              "Malai Kofta",
+              "Sindhi Kadhi",
+              "Navratan Korma",
+              "Stuffed Tomato",
+              "Vegetable Curry",
+              "Makhani Arbi Masala",
+              "Pindi Chana",
+              "Rajma Rasmisa",
+              "Aloo Dahi Wale",
+              "Aloo Dum",
+              "Aloo Mangodi",
+              "Methi Aloo",
+              "Stuffed Aloo",
+              "Aloo Ghobi",
+              "Aloo Ki Sabji",
+              "Aloo Rassewale",
+              "Aloo Took",
+              "Baigan Aloo",
+              "Dum Aloo",
+              "Aloo Palak"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Anda Ka Funda ( Egg )",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "Egg Masala",
+              "Egg Green Masala",
+              "Egg Burji",
+              "Double Omelet",
+              "Egg Mughlai",
+              "Double Boiled Egg",
+              "Egg Chilly",
+              "Egg Manchurian",
+              "Egg 65",
+              "Egg Tadka"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Paneer Dishes",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "Paneer Mehti Chaman",
+              "Paneer Butter Masala",
+              "Paneer Kalimirch",
+              "Shahi Paneer",
+              "Palak Paneer",
+              "Kadai Paneer",
+              "Mutter Paneer",
+              "Paneer Do Pyaza"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Daal Dishes",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "Daal Fry",
+              "Daal Tadka",
+              "Daal Palak",
+              "Daal Masala",
+              "Daal Khichidi",
+              "Daal Makhani"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "South Cuisine",
+    "headers": [
+      {
+        "name": "Vegetarian",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "Dum Aaloo",
+              "Miloni Tarkari",
+              "Vegetable Khorma",
+              "Navratan Chutney",
+              "Palak Paneer",
+              "Vegetable Cutlet",
+              "Vegetable Samosa",
+              "Chana Masala",
+              "Tomato / Mirch ka Saalan",
+              "Bagare Baigan",
+              "Tomato Chutney",
+              "Dalcha (Kaddu)",
+              "TILL Ka Khatta",
+              "Dahi ki Chutney (Raita)",
+              "Dahi Vada",
+              "Papad / Murkul"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Non-Vegetarian",
+        "subheader": [
+          {
+            "name": "Chicken",
+            "items": [
+              "Lazeez Special Chicken",
+              "Chicken Drumsticks",
+              "Chicken Tikka Masala",
+              "Chicken Kadai",
+              "Butter Chicken",
+              "Chicken Afghani",
+              "Chicken Masala",
+              "Chicken Khorma",
+              "Chicken Achari",
+              "Chicken Majestic",
+              "Shahi Chicken (with cashew)",
+              "Dum Chicken (Red & Green)",
+              "Ginger Chicken",
+              "Chicken Fry (Sukka)",
+              "Chicken broast",
+              "Chicken Roast",
+              "Murgh Musallam"
+            ]
+          },
+          {
+            "name": "Mutton",
+            "items": [
+              "Lazeez Special Mutton",
+              "Mutton Pasinda",
+              "Mutton Tikka Masala",
+              "Mutton Kadai",
+              "Mutton Fry (Sukkha)",
+              "Dum Mutton",
+              "Pathar ka Gosht",
+              "Kali Mirchi ka Gosht",
+              "Mutton Masala",
+              "Mutton Kofta Masala",
+              "Mutton Hyderabadi Khorma",
+              "Nahari"
+            ]
+          },
+          {
+            "name": "Sea Food",
+            "items": [
+              "Prawn Masala",
+              "Dum ke Prawn",
+              "Dum ki Machli",
+              "Fish Masala",
+              "Fish Khorma"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Chinese Cuisine",
+    "headers": [
+      {
+        "name": "Vegetarian",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "Veg Manchurian",
+              "Veg Soft Noodles",
+              "Veg Fried Rice",
+              "Aloo 65",
+              "Aloo Manchurian",
+              "Gobi Manchurian",
+              "Gobi 65"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Non-Vegetarian",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "Chicken 65",
+              "Chicken Manchurian",
+              "Chicken Noodles",
+              "Mutton Noodle",
+              "Chicken Fried Rice",
+              "Prawn Fried Rice",
+              "Fried Fish",
+              "Fried Prawns"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Kashmiri Cusine",
+    "headers": [
+      {
+        "name": "",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "\"Qabargaah\"",
+              "Dum Olav",
+              "Gogji Raazma",
+              "Lyodur Tschaman",
+              "Modur Pulaav",
+              "Monji Haak/Gogji Haak",
+              "Nadir Yakhin",
+              "Goshtaba",
+              "Kashmiri Mutton Masala",
+              "Kashmiri Lamb Curry",
+              "Zafrani Roganjosh"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Deserts",
+    "headers": [
+      {
+        "name": "Ice Cream",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "Dry Fruits with ice cream",
+              "Fruit Salad",
+              "Vanilla",
+              "Strawberry",
+              "Chocolate",
+              "Pista",
+              "Mango",
+              "Butterscotch",
+              "Black Currant",
+              "Tuity Fruity"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sweets ( Meetha )",
+        "subheader": [
+          {
+            "name": "",
+            "items": [
+              "Qubaani",
+              "3 in 1 Meetha",
+              "Kesar Kheer",
+              "Kaddu Kheer",
+              "Kaddu Ka Resha",
+              "Gul-e-Firdous",
+              "Double ka Meetha",
+              "Shahi Tukda",
+              "Rabdi",
+              "Gajar ka Halwa",
+              "Egg Pudding",
+              "Pista Kheer",
+              "Rasmalai",
+              "Gulab Jamun",
+              "Gajar Halwa",
+              "Semya Payasam",
+              "Jilebi",
+              "Laddu"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
