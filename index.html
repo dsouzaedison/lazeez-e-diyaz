@@ -48,6 +48,8 @@
                 <img src="images/logo.png" alt="Logo" class="logo"/>
             </div>
         </div>
+
+        <!--1-->
         <div class="col-lg-8 col-md-8 hidden-sm hidden-xs right">
             <span class="nav-links">
                 <a class="font-grey" href="#/home" ng-class="{'border-bottom-brown':currentTab==0}"
@@ -82,8 +84,46 @@
                    ng-click="setTab(5)"><i class="fa fa-phone-square"></i> Contact</a>
             </span>
         </div>
+
+        <!--2-->
+        <div class="col-lg-8 col-md-8 right nav-links-wrapper" ng-show="showMobileNavbar">
+            <span class="nav-links" ng-click="showMobileNavbar=false">
+                <a class="font-grey" href="#/home" ng-class="{'border-bottom-brown':currentTab==0}"
+                   ng-click="setTab(0)"><i class="fa fa-home"></i> Home</a>
+            </span>
+            <span class="nav-links" ng-click="showMobileNavbar=false">
+                <a class="font-grey" href="#/about" ng-class="{'border-bottom-brown':currentTab==1}"
+                   ng-click="setTab(1)"><i class="fa fa-info-circle"></i> About</a>
+            </span>
+            <span class="nav-links dropdown">
+                <a class="font-grey dropdown-toggle service-btn" href="" data-toggle="dropdown"
+                   ng-class="{'border-bottom-brown':currentTab==2}">Services <i
+                        class="fa fa-caret-down"></i></a>
+                <div class="services dropdown-menu font-grey">
+                    <div><a ng-click="showMobileNavbar=false" href="#/corporateCatering" class="dropdown-links" ng-click="setTab(2)">Corporate Catering</a></div>
+                    <div><a ng-click="showMobileNavbar=false" href="#/corporateEvents" class="dropdown-links" ng-click="setTab(2)">Corporate Events</a></div>
+                    <div><a ng-click="showMobileNavbar=false" href="#/weddingEvents" class="dropdown-links" ng-click="setTab(2)">Wedding Events</a></div>
+                    <div><a ng-click="showMobileNavbar=false" href="#/specialEvents" class="dropdown-links" ng-click="setTab(2)">Special Events</a></div>
+                    <div><a ng-click="showMobileNavbar=false" href="#/allServices" class="dropdown-links" ng-click="setTab(2)">All Services</a></div>
+                </div>
+            </span>
+            <span class="nav-links" ng-click="showMobileNavbar=false">
+                <a class="font-grey" href="#/menu" ng-class="{'border-bottom-brown':currentTab==3}"
+                   ng-click="setTab(3)"><i class="fa fa-bars"></i> Menu</a>
+            </span>
+            <span class="nav-links" ng-click="showMobileNavbar=false">
+                <a class="font-grey" href="#/testimonials" ng-class="{'border-bottom-brown':currentTab==4}"
+                   ng-click="setTab(4)"><i class="fa fa-quote-left"></i> Testimonials</a>
+            </span>
+            <span class="nav-links" ng-click="showMobileNavbar=false">
+                <a class="font-grey" href="#/contact" ng-class="{'border-bottom-brown':currentTab==5}"
+                   ng-click="setTab(5)"><i class="fa fa-phone-square"></i> Contact</a>
+            </span>
+        </div>
+
         <div class="hidden-lg hidden-md col-sm-6 col-xs-6 bars">
-            <i class="fa fa-bars"></i>
+            <span class="right bars" ng-click="showMobileNavbar=false"  ng-show="showMobileNavbar"><i class="fa fa-times"></i></span>
+            <i class="fa fa-bars"  ng-hide="showMobileNavbar" ng-click="showMobileNavbar=true"></i>
         </div>
     </div>
 </div>

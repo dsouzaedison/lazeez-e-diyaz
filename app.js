@@ -9,6 +9,7 @@ app.controller('mainCtrl', function ($scope, $http) {
     $scope.modalHeader = 'Loading..';
     $scope.servicemenu = [];
     $scope.menulist = [];
+    $scope.showMobileNavbar = false;
 
     $scope.services = [{name: 'corporateCateringCrystal', menu: ''},
         {name: 'corporateCateringSilver', menu: ''},

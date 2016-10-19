@@ -81,6 +81,8 @@ a:hover {
 
 .bars {
     text-align: right;
+    line-height: 70px;
+    vertical-align: middle;
 }
 
 .data-contents-wrapper {
