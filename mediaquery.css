@@ -7,4 +7,32 @@
     .height722 {
         min-height: 100px;
     }
+
+    .banner-wrapper {
+        max-height: 300px;
+    }
+
+    .about-banner-wrapper {
+        max-height: 300px;
+    }
+
+    .corporate-catering-banner {
+        max-height: 300px;
+    }
+
+    .corporate-event-banner {
+        max-height: 300px;
+    }
+
+    .wedding-event-banner {
+        max-height: 300px;
+    }
+
+    .special-event-banner {
+        max-height: 300px;
+    }
+
+    .testimonial-banner {
+        max-height: 300px;
+    }
 }

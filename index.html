@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords"
           content="best catering, catering service, catering bangalore, top catering, food bangalore, bengaluru, lazeez, e, niyaz, lazeez-e-niyaz">
-    <meta name="description" content="">
+    <meta name="description" content="Best Catering Service with proper Quality and Hygiene">
     <title>Lazeez-E-Niyaaz</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <script src="bower_components/angular/angular.min.js"></script>
@@ -100,11 +100,12 @@
             <span class="h6">Copyright &copy;
                 2016 Lazeez - E - Niyaaz. All rights reserved.</span>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs right">
             <span class="contact-bar-content copyright">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-google-plus"></i>
+                <!--<i class="fa fa-facebook"></i>-->
+                <!--<i class="fa fa-twitter"></i>-->
+                <!--<i class="fa fa-google-plus"></i>-->
+                <b class="h6">Designed and Developed By <a href="http://www.facebook.com/dsouzaedison" style="color: #95b733;" target="_new">Edison D'souza</a></b>
             </span>
         </div>
     </div>
@@ -117,14 +118,14 @@
 
         <!-- Modal content-->
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" ng-class="modalColor">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <div class="modal-title">{{modalHeader}}</div>
+                <div class="modal-title {{modalColor}}">{{modalHeader}}</div>
             </div>
             <div class="modal-body">
                 <div class="menu-item" ng-repeat="item in items"><i class="fa fa-bullseye"></i> {{item}}</div>
             </div>
-            <div class="modal-footer font-grey">
+            <div class="modal-footer font-grey {{modalColor}}">
                 <div class="h6"><i class="fa fa-info-circle"></i> Note : Create your own package at custom events.</div>
             </div>
         </div>

@@ -9,25 +9,27 @@ app.controller('mainCtrl', function ($scope, $http) {
     $scope.modalHeader = 'Loading..';
     $scope.servicemenu = [];
     $scope.menulist = [];
-    $scope.LHMenu= [];
 
-    $scope.services = [{name: 'corporateCateringCrystal', menu : ''},
-        {name: 'corporateCateringSilver', menu : ''},
-        {name: 'corporateCateringGold', menu : ''},
-        {name: 'corporateEventsCrystal', menu : ''},
-        {name: 'corporateEventsSilver', menu : ''},
-        {name: 'corporateEventsGold', menu : ''},
-        {name: 'corporateEventsDiamond', menu : ''},
-        {name: 'weddingEventsCrystal', menu : ''},
-        {name: 'weddingEventsSilver', menu : ''},
-        {name: 'weddingEventsGold', menu : ''},
-        {name: 'weddingEventsDiamond', menu : ''},
-        {name: 'specialEventsCrystal', menu : ''},
-        {name: 'specialEventsSilver', menu : ''},
-        {name: 'specialEventsGold', menu : ''},
-        {name: 'specialEventsDiamond', menu : ''}];
+    $scope.services = [{name: 'corporateCateringCrystal', menu: ''},
+        {name: 'corporateCateringSilver', menu: ''},
+        {name: 'corporateCateringGold', menu: ''},
+        {name: 'corporateEventsCrystal', menu: ''},
+        {name: 'corporateEventsSilver', menu: ''},
+        {name: 'corporateEventsGold', menu: ''},
+        {name: 'corporateEventsDiamond', menu: ''},
+        {name: 'weddingEventsCrystal', menu: ''},
+        {name: 'weddingEventsSilver', menu: ''},
+        {name: 'weddingEventsGold', menu: ''},
+        {name: 'weddingEventsDiamond', menu: ''},
+        {name: 'specialEventsCrystal', menu: ''},
+        {name: 'specialEventsSilver', menu: ''},
+        {name: 'specialEventsGold', menu: ''},
+        {name: 'specialEventsDiamond', menu: ''}];
 
-    $scope.setTab = function(x) {
+    $scope.modalbg = ['bg-gray', 'bg-coral', 'bg-bisque', 'bg-cornflower'];
+    $scope.modalColor = '';
+
+    $scope.setTab = function (x) {
         $scope.currentTab = x;
     };
 
@@ -37,6 +39,7 @@ app.controller('mainCtrl', function ($scope, $http) {
             .then(function (data) {
                 $scope.items = data.data;
             });
+        $scope.setModalColor(header);
     };
 
     for (var i = 0; i < 15; i++) {
@@ -46,15 +49,13 @@ app.controller('mainCtrl', function ($scope, $http) {
     }
 
     $.get('data/menu.json', function (data) {
-        $scope.menulist= data;
+        $scope.menulist = data;
     });
 
-    $.get('data/lowerHierarchyMenu.json', function (data) {
-        $scope.LHMenu= data;
-    });
-
-    //setTimeout(function(){
-    //    console.log($scope.LHMenu);
-    //}, 4000);
+    $scope.setModalColor = function (name) {
+        var colors = {Crystal : 0, Silver : 1, Gold : 2, Diamond : 3};
+        var color = colors[name];
+        $scope.modalColor = $scope.modalbg[color];
+    };
 
 });
