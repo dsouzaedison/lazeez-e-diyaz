@@ -110,4 +110,9 @@
         padding: 15px 5px;
         text-align: center;
     }
+
+    .navbar-top-line {
+        height: 2px;
+        background: #770207;
+    }
 }
