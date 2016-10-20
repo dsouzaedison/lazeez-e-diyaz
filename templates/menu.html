@@ -2,18 +2,18 @@
     <div class="col-lg-12" ng-repeat="menu in menulist">
         <div class="type h1"><i class="fa fa-th-large padding"></i> {{menu.type}}</div>
         <div class="col-lg-12">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding" ng-repeat="header in menu.headers">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-repeat="header in menu.headers">
                 <div class="menu-card">
                     <div class="no-margin font-grey menu-header h2" ng-hide="header.name==''"><i
                             class="fa fa-caret-square-o-down"></i> {{header.name}}
                     </div>
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding"
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
                              ng-repeat="subheader in header.subheader">
                             <div class="h3 no-margin menu-subheader border-bottom" ng-hide="subheader.name==''">
                                 {{subheader.name}}
                             </div>
-                            <ul class="ul-no-style padding">
+                            <ul class="ul-no-style">
                                 <li ng-repeat="item in subheader.items" class="discx margin-left"><i
                                         class="fa fa-hand-o-right"></i> {{item}}
                                 </li>
