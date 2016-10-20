@@ -75,6 +75,11 @@ a:hover {
     color: #fff;
 }
 
+.banner-content {
+    font-size: 130%;
+    font-family: 'Lobster', cursive;
+}
+
 .banner-contents {
     min-height: 300px;
 }
@@ -294,11 +299,13 @@ a:hover {
     color: #615f5f;
     padding: 10px;
     border-radius: 3px;
+    font-family: 'Passion One', cursive;
 }
 
 .menu-item-container {
     padding: 5px;
     border-bottom: 1px solid #eee;
+    font-family: 'Courgette', cursive;
 }
 
 .shadow {
@@ -307,7 +314,7 @@ a:hover {
 
 .service-header {
     color: #1f1f1f;
-    /*color: #898989;*/
+    font-family: 'Righteous', cursive;
 }
 
 .parallax1 {
@@ -319,7 +326,7 @@ a:hover {
 }
 
 .parallax2 {
-    background-size: 100% 160%;
+    background-size: 100% 170%;
     background: url("images/parallax2.jpg");
     padding: 15px;
 }
@@ -355,6 +362,7 @@ a:hover {
 
 .menu-subheader {
     color: #ffa500;
+    font-family: 'Tinos', serif;
 }
 
 .border-bottom-red {
@@ -371,6 +379,7 @@ a:hover {
     cursor: pointer;
     line-height: inherit;
     vertical-align: middle;
+    font-family: 'Acme', sans-serif;
 }
 
 .btn-view-menu:hover {
@@ -382,10 +391,12 @@ a:hover {
 .modal-title {
     font-size: 200%;
     color: #6a6a6a;
+    font-family: 'Passion One', cursive;
 }
 
 .menu-item {
     color: #1a9d46;
+    font-family: 'Courgette', cursive;
 }
 
 .bg-olive {
@@ -472,6 +483,7 @@ a:hover {
     height: 30px;
     text-transform: capitalize;
     color: #7a7a7a !important;
+    font-family: 'Arima Madurai', cursive;
 }
 
 .floating-input:focus {
@@ -508,6 +520,7 @@ textarea {
     border: 1px solid #770207;
     border-radius: 4px;
     margin-top: 5px;
+    font-family: 'Squada One', cursive;
 }
 
 .btn-submit-contact:hover {
@@ -541,7 +554,7 @@ textarea {
 }
 
 .testimonial-text {
-    font-size: 150%;
+    font-size: 180%;
 }
 
 .corporate-catering-banner {
@@ -576,6 +589,9 @@ textarea {
 
 .type {
     border-bottom: 2px solid yellowgreen;
+    font-family: 'Cinzel', serif;
+    font-size: 200%;
+    margin-bottom: 5px;
 }
 
 .margin-left {
@@ -586,8 +602,9 @@ textarea {
     padding: 5px 10px;
     background: #770207;
     color: #fff;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
     box-shadow: 0px 0px 0.3em #555;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 .no-padding {
@@ -611,7 +628,8 @@ textarea {
 }
 
 .package-card {
-    min-height: 415px !important;
+    min-height: 444px !important;
+    font-family: 'Passion One', cursive;
 }
 
 .font-facebook {
@@ -624,4 +642,33 @@ textarea {
 
 .font-google-plus {
     color: #dd4b39;
+}
+
+.home-card-header {
+    font-family: 'Oleo Script', cursive;
+}
+
+.home-card-content {
+    font-family: 'Slabo 27px', serif;
+}
+
+.link-text {
+    font-family: 'Anton', sans-serif;
+}
+
+.h1 {
+    font-size: 300%;
+}
+
+.info1-text {
+    font-family: 'Slabo 27px', serif;
+}
+
+.card-content {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 130%;
+}
+
+.bold {
+    font-weight: bold;
 }
