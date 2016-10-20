@@ -21,6 +21,7 @@
 </head>
 <body ng-controller="mainCtrl">
 
+<!--Info Bar-->
 <div class="contact-bar-top vertical-align hidden-sm hidden-xs">
     <div class="container">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -41,6 +42,7 @@
     </div>
 </div>
 
+<!--Navbar-->
 <div class="navigation-wrapper vertical-align">
     <div class="container">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 vertical-align">
@@ -64,8 +66,10 @@
                    ng-class="{'border-bottom-brown':currentTab==2}">Services <i
                         class="fa fa-caret-down"></i></a>
                 <div class="services dropdown-menu font-grey">
-                    <div><a href="#/corporateCatering" class="dropdown-links" ng-click="setTab(2)">Corporate Catering</a></div>
-                    <div><a href="#/corporateEvents" class="dropdown-links" ng-click="setTab(2)">Corporate Events</a></div>
+                    <div><a href="#/corporateCatering" class="dropdown-links" ng-click="setTab(2)">Corporate
+                        Catering</a></div>
+                    <div><a href="#/corporateEvents" class="dropdown-links" ng-click="setTab(2)">Corporate Events</a>
+                    </div>
                     <div><a href="#/weddingEvents" class="dropdown-links" ng-click="setTab(2)">Wedding Events</a></div>
                     <div><a href="#/specialEvents" class="dropdown-links" ng-click="setTab(2)">Special Events</a></div>
                     <div><a href="#/allServices" class="dropdown-links" ng-click="setTab(2)">All Services</a></div>
@@ -100,11 +104,16 @@
                    ng-class="{'border-bottom-brown':currentTab==2}">Services <i
                         class="fa fa-caret-down"></i></a>
                 <div class="services dropdown-menu font-grey">
-                    <div><a ng-click="showMobileNavbar=false" href="#/corporateCatering" class="dropdown-links" ng-click="setTab(2)">Corporate Catering</a></div>
-                    <div><a ng-click="showMobileNavbar=false" href="#/corporateEvents" class="dropdown-links" ng-click="setTab(2)">Corporate Events</a></div>
-                    <div><a ng-click="showMobileNavbar=false" href="#/weddingEvents" class="dropdown-links" ng-click="setTab(2)">Wedding Events</a></div>
-                    <div><a ng-click="showMobileNavbar=false" href="#/specialEvents" class="dropdown-links" ng-click="setTab(2)">Special Events</a></div>
-                    <div><a ng-click="showMobileNavbar=false" href="#/allServices" class="dropdown-links" ng-click="setTab(2)">All Services</a></div>
+                    <div><a ng-click="showMobileNavbar=false" href="#/corporateCatering" class="dropdown-links"
+                            ng-click="setTab(2)">Corporate Catering</a></div>
+                    <div><a ng-click="showMobileNavbar=false" href="#/corporateEvents" class="dropdown-links"
+                            ng-click="setTab(2)">Corporate Events</a></div>
+                    <div><a ng-click="showMobileNavbar=false" href="#/weddingEvents" class="dropdown-links"
+                            ng-click="setTab(2)">Wedding Events</a></div>
+                    <div><a ng-click="showMobileNavbar=false" href="#/specialEvents" class="dropdown-links"
+                            ng-click="setTab(2)">Special Events</a></div>
+                    <div><a ng-click="showMobileNavbar=false" href="#/allServices" class="dropdown-links"
+                            ng-click="setTab(2)">All Services</a></div>
                 </div>
             </span>
             <span class="nav-links" ng-click="showMobileNavbar=false">
@@ -122,11 +131,13 @@
         </div>
 
         <div class="hidden-lg hidden-md col-sm-6 col-xs-6 bars">
-            <span class="right bars" ng-click="showMobileNavbar=false"  ng-show="showMobileNavbar"><i class="fa fa-times"></i></span>
-            <i class="fa fa-bars"  ng-hide="showMobileNavbar" ng-click="showMobileNavbar=true"></i>
+            <span class="right bars" ng-click="showMobileNavbar=false" ng-show="showMobileNavbar"><i
+                    class="fa fa-times"></i></span>
+            <i class="fa fa-bars" ng-hide="showMobileNavbar" ng-click="showMobileNavbar=true"></i>
         </div>
     </div>
 </div>
+
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -134,23 +145,33 @@
 
 <ng-view></ng-view>
 
-<div class="footer" ng-hide="false">
-    <div class="container">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 copyright">
-            <span class="h6">Copyright &copy;
-                2016 Lazeez - E - Niyaaz. All rights reserved.</span>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs right">
-            <span class="contact-bar-content copyright">
-                <!--<i class="fa fa-facebook"></i>-->
-                <!--<i class="fa fa-twitter"></i>-->
-                <!--<i class="fa fa-google-plus"></i>-->
-                <b class="h6">Designed and Developed By <a href="http://www.facebook.com/dsouzaedison" style="color: #95b733;" target="_new">Edison D'souza</a></b>
-            </span>
-        </div>
+<!--Social Media-->
+<div class="col-lg-12 hidden-lg hidden-md">
+    <div class="contact-bar-content center padding">
+        <i class="fa fa-facebook font-facebook"></i>
+        <i class="fa fa-twitter font-twitter"></i>
+        <i class="fa fa-google-plus font-google-plus"></i>
     </div>
 </div>
 
+<!--Footer-->
+<div class="footer" ng-hide="false">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 copyright">
+            <div class="h6">
+                Copyright &copy; 2016 Lazeez - E - Niyaaz. All rights reserved.
+            </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs right">
+            <div class="contact-bar-content copyright">
+                <b class="h6">Designed and Developed By <a href="http://www.facebook.com/dsouzaedison"
+                                                           style="color: #95b733;" target="_new">Edison D'souza</a></b>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--POPUP-->
 <div id="myModal" class="modal fade" role="dialog">
@@ -172,6 +193,7 @@
 
     </div>
 </div>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
 </body>
 </html>
