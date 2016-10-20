@@ -66,6 +66,10 @@ a:hover {
     vertical-align: middle;
 }
 
+.banner-title {
+    font-family: 'Istok Web', sans-serif;
+}
+
 .banner-wrapper {
     height: 400px;
     width: 100%;
@@ -76,8 +80,8 @@ a:hover {
 }
 
 .banner-content {
-    font-size: 130%;
-    font-family: 'Lobster', cursive;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .banner-contents {
@@ -658,7 +662,7 @@ textarea {
 }
 
 .link-text {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 
 .h1 {
