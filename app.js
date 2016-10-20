@@ -27,7 +27,7 @@ app.controller('mainCtrl', function ($scope, $http) {
         {name: 'specialEventsGold', menu: ''},
         {name: 'specialEventsDiamond', menu: ''}];
 
-    $scope.modalbg = ['bg-gray', 'bg-coral', 'bg-bisque', 'bg-cornflower'];
+    $scope.modalbg = ['bg-gray', 'bg-green', 'bg-orange', 'bg-primary'];
     $scope.modalColor = '';
 
     $scope.setTab = function (x) {

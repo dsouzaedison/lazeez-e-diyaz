@@ -608,3 +608,7 @@ textarea {
 .text-shadow-white {
     text-shadow: 1px 1px #fff;
 }
+
+.package-card {
+    min-height: 415px !important;
+}
