@@ -11,4 +11,16 @@ $(function () {
                 $('.parallax2').css('backgroundPositionY', (Number($(window).scrollTop() * 0.05) + '%'));
             }, 100);
         });
+
+    //if ($(window).outerWidth() < 1024) {
+    //
+    //}
+
+    $(document).on('blur', '#locationInput', function () {
+        $scope.showMobileNavbar = false;
+    });
+
+    $(window).on('scroll', function () {
+        $scope.showMobileNavbar = false;
+    });
 });

@@ -59,4 +59,12 @@ app.controller('mainCtrl', function ($scope, $http) {
         $scope.modalColor = $scope.modalbg[color];
     };
 
+    $(document).on('blur', '#locationInput', function () {
+        $('.services-dropdown').removeClass('open');
+    });
+
+    $(window).on('scroll', function () {
+        $('.services-dropdown').removeClass('open');
+    });
+
 });

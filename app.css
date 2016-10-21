@@ -282,7 +282,7 @@ a:hover {
 }
 
 .service-btn:hover ~ .dropdown-menu, .dropdown-menu:hover {
-    display: block;
+    /*display: block;*/
 }
 
 .dropdown-menu:before {
